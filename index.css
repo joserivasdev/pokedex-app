@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(173, 150, 150);
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex-container{
+    display: flex;
+    flex-direction: column;
+    height: 851px;
+    width: 500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pantalla-uno{
+    height: 50%;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+}
+
+.pantalla-uno_header{
+    width: 100%;
+    height: 20%;
+    background-color: #D0B860;
+    /*border-bottom: 3px solid #F6F5DA;*/
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 0px 0 0px 0px;
+    border-bottom: 5px solid #383737;
+    box-shadow: inset 0px -4px 0px 0px  #F6F5DA;
+}
+
+.pantalla-uno_header .pantalla-uno_header_cube{
+    height: 100%;
+    width: 100px;
+    display: block ;
+    background-color: #D0D088;
+    border-left: 5px solid #A09848;
+    box-shadow: inset 0px -4px 0px 0px  #F6F5DA;
+}
+
+.pantalla-uno_header_message .poke-ball-icon{
+    padding: 0;
+    margin: 0 10px 0 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/poke-ball-icon-withe.svg');
+    background-repeat: no-repeat;
+}
+
+.pantalla-uno_header_message{
+    margin-left: 20px;
+    background-color: #F86870;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
+    border: 3px solid #383737;
+}
+
+
+
+.pantalla-uno_header_message p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Passion One', cursive;
+    text-align: center;
+}
+
+.pantalla-uno_main{
+    box-shadow: inset 0px 20px 100px 1px rgba(0, 0, 0, 0.474);
+    width: 100%;
+    height: 60%;
+    background-color: #707050;
+    display: flex;
+    flex-direction: row;
+}
+
+.pantalla-uno_main_img{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #D0B860;*/
+}
+
+.pantalla-uno_main_img .img-container{
+    width: 170px;
+    height: 170px;
+    background-color: #F0F0F8;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 7px solid #95ADD6;
+}
+
+.pantalla-uno_main_img .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.pantalla-uno_main_slider{
+    width: 55%;
+    height: 100%;
+    /*background-color: aqua*/
+    /*HAY QUE COLOCAR EL OVER-FLOW ACA, creo...*/
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper .swiper-slide{
+    
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #B8B0B8;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+    border-top-left-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px ;
+}
+
+.swiper-slide{
+    position: relative;
+}
+
+.swiper-slide.swiper-slide-active{
+    background-color: #F9F8CA;
+    /*transition: background-color 5s;*/
+    cursor: pointer;
+}
+
+.swiper-slide .poke-ball-icon{
+    margin: 0 10px 0 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./assets/poke-ball-icon.svg');
+    background-repeat: no-repeat;
+}
+
+.swiper-slide p{
+    margin-block:0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.pantalla-uno_footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
+    flex-direction: column-reverse;
+    background-color: #D0B860;
+    border-top: 5px solid #383737;
+    box-shadow: inset 0px 4px 0px 0px  #F6F5DA;
+}
+
+
+.pantalla-uno_footer .pantalla-uno_footer_cube{
+    height: 100%;
+    width: 100px;
+    display: block ;
+    background-color: #D0D088;
+    border-left: 5px solid #A09848;
+    box-shadow: inset 0px 4px 0px 0px  #F6F5DA;
+}
+
+.pantalla-dos{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: #D0B088;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.pantalla-dos .ver-pokemon-button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 170px;
+    height: 150px;
+    background-color: #80D860;
+    /*box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.35);*/
+    box-shadow: inset -3px 5px 0px 2px rgba(0, 0, 0, 0.474);
+
+    margin: 15px;
+    border-radius: 20px;
+    align-items: center;
+    border: none;
+    outline: none;
+    outline: 6px solid rgba(0, 0, 0, 0.287);
+}
+
+.pantalla-dos .ver-pokemon-button:hover{
+    cursor: pointer;
+}
+
+.pantalla-dos .ver-pokemon-button:active{
+    background-color: #F0C058;
+    box-shadow: inset 0px 3px 0px 2px rgba(0, 0, 0, 0.474);
+    /*aqui va el efecto de cuando se presione el boton de ver pokemon*/
+}
+
+
+
+.ver-pokemon-button span{
+    display: flex;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'VT323', monospace;
+}
+
+.pantalla-dos .buttons{
+    position: absolute;
+    z-index: 10;
+    margin-right: 10px;
+    width: 100px;
+    height: 75%;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.35);
+    background-color: #C8B080;
+    border-top-left-radius: 50px 50px;
+    border-bottom-left-radius: 50px 50px;
+    border-top-right-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.buttons button{
+    background-color: #A0B8F8;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 100%;
+    margin: 15px 0 15px 0;
+    box-shadow: 0px -3px 0px 2px #6B83B6;
+}
+
+
+.buttons button:active{
+    background-color: #7394e0;
+    box-shadow: 0px -1px 0px 2px rgba(0, 0, 0, 0.35);
+}
+
+
+.primera-diapositiva i svg{
+    width: 40px;
+    height: 40px;
+    transform: scaleX(-1);
+    color: #325cbd;
+    transform: rotate(270deg);
+}
+
+.ultima-diapositiva i svg{
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
+    color: #325cbd;
+}
+
+
+.buttons .five-buttons{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #5d83dc;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.pantalla-dos .giga-pokeball{
+    transform: rotate(0deg);
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-image: url('./assets/poke-ball-icon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -220px;
+
+}
+
+
+

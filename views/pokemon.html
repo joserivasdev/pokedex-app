@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Iconify-->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=VT323&display=swap" rel="stylesheet">
+    <!-- SWIPER JS-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/pokemon.css">
+    
+    <title>Poke-App</title>
+</head>
+<body>
+
+    <main>
+        <div class="pokedex-container">
+            <!--Pantalla uno-->
+            <div class="pantalla-uno" id="pantallaUnoContainer">
+
+                <div class="pantalla-uno_header">
+                    
+                    <div class="pantalla-uno_header_message">
+                        <span class="iconify" data-icon="bxs:down-arrow"></span>
+                        <p>INFO.</p>
+                    </div>
+                    <div class="pantalla-uno_header_cube">
+                    </div>
+                </div>
+
+                <div class="pantalla-uno_main" id="pantallaUnoMain">
+                    <div class="pantalla-uno_main_img">
+                        <div class="img-container"><img src="../assets/question.svg" alt="" class="image" id="pokemonSprite"></div>
+                    </div>
+                    <div class="pantalla-uno_main_slider" id="sliderContainer">
+                        
+                    <!--<div class="info-container" id="infoContainer">        
+                        </div>
+                                              
+                        <div class="pokemon-types" id="pokemonTypes">
+                        </div>
+                      
+                        <div class="peso-altura-container" id="pesoAlturaContainer">    
+                        </div>-->
+
+                    </div>
+                </div>
+            
+            <!--<div class="pantalla-uno_footer" id="pantallaUnoFooter">
+                    <span></span>
+                    <div id="flavorText"></div>
+                    <span></span>
+                </div>-->
+            </div >
+
+            <!--Pantalla dos-->
+            <div class="pantalla-dos">
+                <div class="pantalla-dos_header">
+                    <div class="buttons">
+                        <button class="info-active" id="infoButton">
+                            info
+                        </button>
+                        <button class="stats-inactive" id="statsButton">
+                            stats
+                        </button>
+                    </div>
+
+                    <button class="go-back" id="goBack">
+                        <span class="iconify" data-icon="entypo:back"></span>
+                    </button>
+                </div>
+                
+                <div class="pantalla-dos_main">
+                    <div class="pantalla-dos_main_points">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="pantalla-dos_main_buttons">
+                        <button id="antPokemon">
+                            <i class="ant-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200"><path fill="currentColor" d="M599.992 0L131.243 703.131h252.546V1200h432.422V703.131h252.546L599.992 0z"/></svg>
+                            </i>
+                            <span>ANT.</span>
+                        </button>
+                        <button id="sigPokemon">
+                            <span>SIG.</span>
+                            <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200"><path fill="currentColor" d="M600 1200L131.25 496.875h252.539V0h432.422v496.875h252.539L600 1200z"/></svg>
+                            </i>
+                        </button>
+                    </div>
+                    <div class="pantalla-dos_main_points">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="../js/pokemon.js"></script>
+</body>
+</html>

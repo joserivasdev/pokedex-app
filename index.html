@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=VT323&display=swap" rel="stylesheet">
+    <!-- SWIPER JS-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>Poke-App</title>
+</head>
+<body>
+
+    <main>
+        <div class="pokedex-container">
+            <!--Pantalla uno-->
+            <div class="pantalla-uno">
+
+                <div class="pantalla-uno_header">
+                    <div class="pantalla-uno_header_message">
+                        <span class="poke-ball-icon"></span>
+                        <p>POKéDEX SINNOH</p>
+                        <span class="poke-ball-icon"></span>
+                    </div>
+                    <div class="pantalla-uno_header_cube">
+                    </div>
+                </div>
+
+                <div class="pantalla-uno_main">
+                    <div class="pantalla-uno_main_img">
+                        <div class="img-container"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png" alt="" id="pokemonSprite"></div>
+                    </div>
+                    <div class="pantalla-uno_main_slider">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper" id="swiper-wrapper">
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pantalla-uno_footer">
+                    <div class="pantalla-uno_footer_cube">
+                    </div>
+                </div>
+
+            </div >
+
+            <!--Pantalla dos-->
+            <div class="pantalla-dos">
+                <button class="ver-pokemon-button" id="verPokemon">
+                    <span>VER <br>POKéDEX</span>
+                </button>
+                <div class="buttons">
+                    <button class="primera-diapositiva" id="primeraDiapositiva">
+                        <i id="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100"><path fill="currentColor" d="M88.765 77.291v-54.72l.001-.005l-.001-.005v-.235h-.024a2.529 2.529 0 0 0-2.513-2.296c-.03 0-.058.008-.087.009h-4.569c-.071-.006-.14-.021-.213-.021a2.538 2.538 0 0 0-2.537 2.537c0 .117.019.23.035.343v23.141l-33.341-19.25a1.715 1.715 0 0 0-2.92 1.172h-.006V43.21L14.148 26.788a1.715 1.715 0 0 0-2.92 1.172h-.005v44.031a1.718 1.718 0 0 0 2.948 1.197L42.59 56.78v15.212a1.718 1.718 0 0 0 2.948 1.197l33.319-19.237v23.382h.013c-.002.039-.012.075-.012.114a2.537 2.537 0 0 0 2.532 2.536h4.852v-.024a2.537 2.537 0 0 0 2.537-2.537c-.001-.046-.012-.088-.014-.132z"/></svg>
+                        </i>
+                    </button>
+
+                    <button class="five-buttons" id="fiveBefore">- 5</button>
+
+                    <button class="five-buttons" id="fiveNext">+ 5</button>
+
+                    <button class="ultima-diapositiva" id="ultimaDiapositiva">
+                        <i>
+                            <svg  id="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100"><path fill="currentColor" d="M88.765 77.291v-54.72l.001-.005l-.001-.005v-.235h-.024a2.529 2.529 0 0 0-2.513-2.296c-.03 0-.058.008-.087.009h-4.569c-.071-.006-.14-.021-.213-.021a2.538 2.538 0 0 0-2.537 2.537c0 .117.019.23.035.343v23.141l-33.341-19.25a1.715 1.715 0 0 0-2.92 1.172h-.006V43.21L14.148 26.788a1.715 1.715 0 0 0-2.92 1.172h-.005v44.031a1.718 1.718 0 0 0 2.948 1.197L42.59 56.78v15.212a1.718 1.718 0 0 0 2.948 1.197l33.319-19.237v23.382h.013c-.002.039-.012.075-.012.114a2.537 2.537 0 0 0 2.532 2.536h4.852v-.024a2.537 2.537 0 0 0 2.537-2.537c-.001-.046-.012-.088-.014-.132z"/></svg>
+                        </i>
+                    </button>
+                </div>
+
+                <span class="giga-pokeball" id="gigaPokeball">
+                    
+                </span>
+            
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
